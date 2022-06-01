@@ -36,14 +36,12 @@ export class latihan10_2 extends Component {
         nomor_hp: this.state.nomor_hp,
         email: this.state.email,
       })
-      .then(
-        response => {
-          console.log(response);
-        },
-        error => {
-          console.log(error);
-        },
-      );
+      .then(res => {
+        this.setState({
+          show_modal: false,
+        });
+      });
+
     this.getDataKontak();
   };
 

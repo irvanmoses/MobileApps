@@ -56,7 +56,6 @@ app.post("/kontak", (req, res) => {
   // const nama_belakang = req.body.nama_belakang;
   // const email = req.body.email;
   // const nomor_hp = req.body.nomor_hp;
-  console.log(req.body);
 
   var data = {
     nama_depan: req.body.nama_depan,
